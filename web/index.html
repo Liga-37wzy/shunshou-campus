@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#176b55">
+  <meta name="description" content="顺手校园：顺路接单、闲置易物、失物招领与线下服务站。">
+  <title>顺手校园 · 让每一段顺路，都有用</title>
+  <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#hall"><img src="/static/mark.svg" alt="" width="42" height="42"><span>顺手校园<small>SHUNSHOU CAMPUS</small></span></a>
+    <div class="campus-chip"><span class="dot"></span>梧桐大学 · 示范校区</div>
+    <nav id="nav" aria-label="主要功能"></nav>
+    <div class="sidebar-bottom"><div class="mini-mark">↗</div><strong>一段顺路，一点善意。</strong><p>把校园里的需要，<br>交给刚好顺路的人。</p><span class="version">OPEN SOURCE / v0.1.0</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">校园生活 <span>/</span> <strong id="page-label">顺路大厅</strong></div><div class="account"><span id="mode-label"></span><label class="sr-only" for="identity">切换演示身份</label><select id="identity" hidden></select><button class="button subtle" id="auth-button">登录 / 注册</button></div></header>
+    <main id="main" tabindex="-1"><div class="loading">正在连接校园服务…</div></main>
+    <footer>顺手校园 · 一起把校园生活变简单 <span>原创开源原型 · 地点与数据均为虚构</span></footer>
+  </div>
+  <dialog id="dialog"><div class="dialog-head"><h2 id="dialog-title"></h2><button class="icon-button" id="close-dialog" aria-label="关闭对话框">×</button></div><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
